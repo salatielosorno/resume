@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    /*background-image: url('./images/bg.jpg');*/
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #444444;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.wrap{
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.wrap__nav{
+    position: fixed;
+    height: 100%;
+    background-color: #4A917F;
+}
+.wrap__content{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: #F2F2F2;/*#f6f6f6;*/
+    overflow-x: scroll;
+    padding: 2rem;
+}
+.box{
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+}
+.nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+.nav__item{
+    display: block;
+    padding: 1rem;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+}
+.type-wrap{
+    padding: 1rem 2rem;
+}
+.type-wrap__typewriter{
+    margin: 0;
+    color: #D16B7D;/*#A45491;*/
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid #B2B2B2;
+    letter-spacing: .15em;
+    animation: typing 2s steps(30, end), blink-caret .5s infinite;
+}
+.type-wrap__typewriter--display{
+    display: inline-block;
+}
+@-webkit-keyframes typing{
+    from { width: 0; }
+    to { width: 100%; }
+}
+@keyframes typing{
+    from { width: 0; }
+    to { width: 100%; }
+}
+@-webkit-keyframes blink-caret{
+    from, to { border-color: transparent; }
+    50% { border-color: #B2B2B2; }
+}
+@keyframes blink-caret{
+    from, to { border-color: transparent; }
+    50% { border-color: #B2B2B2; }
+}
+@-webkit-keyframes slideRight{
+    from { margin-left: 0; }
+    to { margin-left: 80px; }
+}
+@keyframes slideRight{
+    from { margin-left: 0; }
+    to { margin-left: 80px; }
+}
+@-webkit-keyframes slideUp{
+    from { visibility: hidden; opacity: 0; }
+    to { visibility: visible; opacity: 1; }
+}
+@keyframes slideUp{
+    from { visibility: hidden; opacity: 0; }
+    to { visibility: visible; opacity: 1; }
+}
+.slideRight{
+    animation: slideRight .5s;
+    margin-left: 80px;
+}
+.wrap__content--margin{
+    margin-left: 80px;
+}
+.bar-menu{
+    width: 50px;
+    height: 50%;
+    overflow: hidden;
+    margin: auto;
+    cursor: pointer;
+}
+.bar-menu__line{
+    width: 50px;
+    height: 3px;
+    background-color: white;
+    margin-top:10px;
+    float:left;
+}
+.font-purple{
+    color: #D16B7D;/*#A45491;*/
+}
+.title-1{
+    /*color: #444444;/*#2A2A2A;/*#755296;*/
+    font-size: 3rem;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+.title-2{
+    font-size: 2rem;
+}
+.title-3{
+    color: #AA3C50;
+}
+.title-4{
+    color: #73AD9E;
+}
+#knowme{
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: ease-in opacity .5s;
+}
+.wrap__content--hide{
+    display: none;
+}
+.photo__img{
+    padding: .25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    max-width: 100%;
+    height: auto;
+    clip-path: circle(45% at center);
+}
+.photo__tag{
+    background-color: #AA3C50;
+    border: solid 2px white;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transform: rotate(-5deg);
+    transform-origin: top right;
+    -webkit-transform: rotate3d(0,0,1,-5deg);
+    -webkit-transform-origin: top right;
+}
+.row{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: center;
+}
+@media(min-width: 768px){
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.title-1--color-g{
+    color: #4A917F;
+}
+.icon{
+    text-align: center;
+    padding: .5rem 2rem;
+    width: 5rem;
+    box-sizing: content-box;
+}
+.row-right{
+    justify-content: start;
+}
+.contact{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.contact__link{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 0;
+    color: #444;
+}

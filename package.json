@@ -1,0 +1,35 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "This is my resume",
+  "private": true,
+  "scripts": {
+    "build": "webpack --config webpack.production.js",
+    "start": "webpack-dev-server --config webpack.development.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salatielosorno/resume.git"
+  },
+  "author": "Salatiel Osorno Linares",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salatielosorno/resume/issues"
+  },
+  "homepage": "https://github.com/salatielosorno/resume#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^1.0.1",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^2.1.0",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "terser-webpack-plugin": "^1.2.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-merge": "^4.2.1"
+  }
+}
