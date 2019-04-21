@@ -22,7 +22,7 @@ body{
 .wrap__nav{
     position: fixed;
     height: 100%;
-    background-color: #4A917F;
+    background-color: #444; /* #4A917F;*/
 }
 .wrap__content{
     position: relative;
@@ -177,6 +177,7 @@ body{
     margin-left: -15px;
     justify-content: center;
 }
+
 @media(min-width: 768px){
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -191,12 +192,26 @@ body{
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 }
+@media(max-width: 768px){
+    .col-md-12 {
+        width: 100%;
+    }
+    .photo{
+        display: none;
+    }
+    .wrap__content{
+        padding: 1rem 2rem;
+    }
+}
 [class*="col-"] {
     float: left;
     padding: 15px;
 }
-.title-1--color-g{
+.title-1--color-green{
     color: #4A917F;
+}
+.title-1--color-gray{
+    color: #444;
 }
 .icon{
     text-align: center;
