@@ -235,3 +235,70 @@ p.text-description {
     float: left;
     padding: 15px;
 }
+/**/
+.cards-wrap {
+    /*display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    height: 80vh;*/
+    position: relative;
+}
+.cards-wrap::after {
+    content: " ";
+    border-right: solid 1px rgba(0,0,0,.17);
+    height: 100%;
+    top: 0;
+    left: 0;/* 50%;*/
+    position: absolute;
+}
+.card-experience {
+    padding: 1rem;
+    width: 50%;
+}
+.card-experience__wrap{
+    -webkit-box-shadow: -5px 20px 19px -8px rgba(0,0,0,0.25);
+    -moz-box-shadow: -5px 20px 19px -8px rgba(0,0,0,0.25);
+    box-shadow: -5px 20px 19px -8px rgba(0,0,0,0.25);
+}
+.card-experience__head {
+    background-color: #46b8e9;
+    color: white;
+    position: relative;
+}
+.card-experience__head::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-color: #46b8e9;
+    border-top: solid 10px transparent;
+    border-bottom: solid 10px transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+.card-experience__head--left::after{
+    border-left-width: 10px;
+    border-left-style: solid;
+    left: 100%;
+}
+.card-experience__head--right::after {
+    border-right-width: 10px;
+    border-right-style: solid;
+    right: 100%;
+}
+.card-experience__head h2{
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+.card-experience__body {
+    padding: 1rem;
+}
+.text-list {
+    font-size: .8rem;
+    padding: 0 0 0 .5rem;
+}
+.company {
+    display: block;
+    font-size: .8rem;
+}
