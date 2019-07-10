@@ -377,3 +377,51 @@ p.text-description {
     background-color: rgba(0,0,0,.17);
     margin-left: .5rem;
 }
+.postit {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.postit__wrap {
+    margin:1em;
+    float:left;
+}
+.postit__card {
+    text-decoration:none;
+    color:#000;
+    display: block;
+    height: 8em;
+    width: 8em;
+    padding: 1em;
+    font-family: 'Reenie Beanie';
+    box-shadow: 4px 4px 7px rgba(33,33,33,.7);
+}
+.postit__card > h2 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+.postit__wrap:nth-child(1){
+    transform: rotate(1deg)
+}
+.postit__wrap:nth-child(even){
+    transform: rotate(6deg)
+}
+.postit__wrap:nth-child(5n){
+    transform: rotate(-3deg)
+}
+.postit__card--color-1 {
+    background-color: gold;
+}
+.postit__card--color-2 {
+    background-color: greenyellow;
+}
+.postit__card--color-3 {
+    background-color: mediumvioletred;
+    color: white;
+}
+.postit__card--color-4 {
+    background-color: #ffc;
+}
+.postit__card--color-5 {
+    background-color: darkturquoise;
+}
