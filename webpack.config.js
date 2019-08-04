@@ -52,7 +52,7 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(['docs']),
         new HtmlWebpackPlugin({
-            title: 'Resume',
+            title: 'Desarrollador web',
             filename: 'index.html',
             template: './src/index.html'
         }),
