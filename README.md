@@ -4,11 +4,13 @@ This is my resume. I have made it just for fun, but here I have applied knowledg
 
 ## Sections
 
-* Welcome page
 * About me
 * Skills
 * Experience
-* Get in touch
+* Courses
+
+##Repository
+[Resume](https://github.com/salatielosorno/resume)
 
 ## License
 Feel free getting code to learn, fun, or whatever you want. Just change info.
