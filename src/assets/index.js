@@ -56,10 +56,9 @@ function load() {
     if(window.innerWidth <= 540){
         let profile = document.querySelector("#profile");
         let about = document.querySelector("#about");
-        /*if(window.innerHeight >= 580){
-            profile.style.height = (window.innerHeight - 73) + "px";
-        }*/
+
         redimentionProfile();
+        
         profile.style.display = 'block';
         about.style.display = 'none';
     }
@@ -76,13 +75,10 @@ function resize(){
         let sectionActive = e.dataset.link;
 
         if(sectionActive == 'profile' && window.innerWidth >= 541){
-            /*if(window.innerHeight >= 580){
-                document.querySelector("#profile").style.height = (window.innerHeight - 73) + "px";
-            }*/
-            redimentionProfile();
             hideHomeMobil();
             showAboutMe();
         }
+        redimentionProfile();
     })
 }
 
