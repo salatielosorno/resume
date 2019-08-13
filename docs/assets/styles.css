@@ -425,3 +425,61 @@ p.text-description {
 .postit__card--color-5 {
     background-color: darkturquoise;
 }
+@media(max-width: 540px){
+    .content{
+        position: relative;
+        padding-bottom: 70px;
+    }
+    .profile{
+        display: none;
+    }
+    .profile-mobil{
+        display: block;
+        float: initial;
+        overflow: unset;
+        background-color: #2eb398;
+        width: 100%;
+        margin-bottom: -70px;
+    }
+    .profile__about{
+        width: 270px;
+        margin: auto;
+    }
+    .nav-section-wrap{
+        display: none;
+    }
+    .nav-mobil-section .nav-social{
+        justify-content: space-around;
+    }
+    .nav-movil-section-wrap .nav__link{
+        color:black;
+    }
+    .nav-social-wrap--bg-color-gray-light{
+        background-color: #27292B;
+    }
+    .nav-mobil-section{
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 999;
+    }
+    .wrap__content{
+        margin: 0;
+        overflow: initial;
+    }
+    .type-wrap{
+        padding: 2rem 1rem;
+    }
+}
+@media(min-width: 541px){
+    .profile-mobil{
+        display: none;
+    }
+    .nav-mobil-section{
+        display: none;
+    }
+}
+.nav-social-wrap--dark-green{
+    background-color: #028168;
+}
