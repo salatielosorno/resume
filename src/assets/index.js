@@ -13,7 +13,8 @@ function addEventsButtons(){
             if(link != null || link != undefined){
                 link.style.display = 'block';
             }
-            setLinkActive(e.dataset.link)
+            setLinkActive(e.dataset.link);
+            redimentionProfile();
             document.getElementById("wrap__content").scrollTop = 0;
             document.documentElement.scrollTop = 0;
         });
@@ -55,11 +56,17 @@ function load() {
     if(window.innerWidth <= 540){
         let profile = document.querySelector("#profile");
         let about = document.querySelector("#about");
-        if(window.innerHeight >= 580){
+        /*if(window.innerHeight >= 580){
             profile.style.height = (window.innerHeight - 73) + "px";
-        }
+        }*/
+        redimentionProfile();
         profile.style.display = 'block';
         about.style.display = 'none';
+    }
+}
+function redimentionProfile(){
+    if(window.innerHeight >= 580){
+        document.querySelector("#profile").style.height = (window.innerHeight - 73) + "px";
     }
 }
 function resize(){
@@ -69,9 +76,10 @@ function resize(){
         let sectionActive = e.dataset.link;
 
         if(sectionActive == 'profile'){
-            if(window.innerHeight >= 580){
+            /*if(window.innerHeight >= 580){
                 document.querySelector("#profile").style.height = (window.innerHeight - 73) + "px";
-            }
+            }*/
+            redimentionProfile();
             hideHomeMobil();
             showAboutMe();
         }
