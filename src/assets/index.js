@@ -75,7 +75,7 @@ function resize(){
     linksActive.forEach((e,k)=>{
         let sectionActive = e.dataset.link;
 
-        if(sectionActive == 'profile'){
+        if(sectionActive == 'profile' && window.innerWidth >= 541){
             /*if(window.innerHeight >= 580){
                 document.querySelector("#profile").style.height = (window.innerHeight - 73) + "px";
             }*/
