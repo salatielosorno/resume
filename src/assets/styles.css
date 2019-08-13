@@ -436,7 +436,7 @@ p.text-description {
     .profile-mobil{
         display: block;
         float: initial;
-        overflow: unset;
+        overflow: initial;
         background-color: #2eb398;
         width: 100%;
         margin-bottom: -70px;
@@ -462,7 +462,7 @@ p.text-description {
         position: fixed;
         bottom: 0;
         width: 100%;
-        z-index: 999;
+        z-index: 999999;
     }
     .wrap__content{
         margin: 0;
