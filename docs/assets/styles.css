@@ -425,6 +425,9 @@ p.text-description {
 .postit__card--color-5 {
     background-color: darkturquoise;
 }
+.devicon-visualstudio-plain--color-blue.colored{
+    color: #0078d7;
+}
 @media(max-width: 540px){
     .content{
         position: relative;
