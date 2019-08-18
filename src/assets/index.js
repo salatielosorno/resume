@@ -3,7 +3,7 @@ import './styles.css'
 function addEventsButtons(){
     let links = document.body.querySelectorAll('.nav__link');
     links.forEach((e,k)=>{
-        e.addEventListener('click', ()=>{
+        e.addEventListener('click', function() {
             hideSections(links)
             let link = document.body.querySelector('#'+e.dataset.link);
             
@@ -83,6 +83,6 @@ function resize(){
 }
 
 addEventsButtons();
-window.onresize = () => { resize() }
-window.onload = () => { load() }
+window.onresize = function() { resize() }
+window.onload = function() { load() }
 window.addEventListener('orientationchange', resize);
