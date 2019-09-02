@@ -9,8 +9,8 @@ This is my resume. I have made it just for fun, but here I have applied knowledg
 * Experience
 * Courses
 
-##Repository
-[Resume](https://github.com/salatielosorno/resume)
+## View resume - GitHub Pages
+[Resume](https://salatielosorno.github.io/resume)
 
 ## License
 Feel free getting code to learn, fun, or whatever you want. Just change info.
