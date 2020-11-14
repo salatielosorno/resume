@@ -1,4 +1,5 @@
 import './styles.css';
+import './switch.css';
 
 function addEventsButtons() {
 	let links = document.body.querySelectorAll('.nav__link');
@@ -20,6 +21,33 @@ function addEventsButtons() {
 		});
 	});
 }
+
+function initSwitch() {
+	let switchButton = document.getElementById('switch');
+
+	switchButton.checked = localStorage.getItem('mode-resume') === "true"? true : false;
+	localStorage.setItem('mode-resume', switchButton.checked);
+
+	let body = document.getElementsByTagName('body');
+	if(switchButton.checked) {
+		body[0].classList.add('body--dark');
+	} else {
+		body[0].classList.remove('body--dark');
+	}
+
+	switchButton.addEventListener('change', (event) => {
+		localStorage.setItem('mode-resume', event.target.checked);
+
+		let body = document.getElementsByTagName('body');
+
+		if(event.target.checked) {
+			body[0].classList.add('body--dark');
+		} else {
+			body[0].classList.remove('body--dark');
+		}
+	})
+}
+
 function setLinkActive(id) {
 	let links = document.body.querySelectorAll('[data-link="' + id + '"]');
 	links.forEach((e, k) => {
@@ -83,6 +111,7 @@ function resize() {
 }
 
 addEventsButtons();
+initSwitch();
 window.onresize = function() {
 	resize();
 };

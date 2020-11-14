@@ -554,3 +554,77 @@ p.text-description {
 .nav-social-wrap--dark-green {
 	background-color: #028168;
 }
+
+/*==== Dark mode ====*/
+.body--dark {
+	color:#f1f1f1;
+	background-color: #282828;
+}
+.body--dark .card-experience__head,
+.body--dark .card-experience__head:before {
+	/*background-color: #404040;
+	border-color: #282828;*/
+	border-color: #282828;
+	filter: grayscale(60%);
+}
+.body--dark .card-experience__head::after {
+	/*border-right-color: #404040;
+	border-left-color: #404040;
+	color:#f1f1f1;*/
+
+	filter: grayscale(60%);
+}
+.body--dark .card-experience__body {
+	/*background-color: #5E5E5E;*/
+	background-color: #404040;
+}
+.body--dark .cards-wrap::after {
+	border-right: solid 1px rgba(255, 255, 255, 0.17);
+}
+.body--dark .title-1 {
+	color: #f1f1f1;
+	text-shadow: none;
+}
+.body--dark .nav-mobil-section {
+	background-color: #030302;
+}
+.body--dark .postit__card {
+	/*background-color: #5E5E5E;
+	color: #f1f1f1;*/
+	filter: grayscale(60%);
+}
+.body--dark .profile {
+	background-color: #282828;
+}
+.body--dark .profile__about {
+    background-color: #282828;
+}
+.body--dark .nav-social-wrap {
+	background-color: #404040;
+}
+.body--dark .icon {
+	filter: grayscale(60%);
+}
+@media (max-width: 541px) {
+	.body--dark .postit__card {
+		filter: grayscale(90%);
+	}
+	.body--dark .icon {
+		filter: grayscale(90%);
+	}
+	.body--dark .card-experience__head,
+	.body--dark .card-experience__head:before {
+		/*background-color: #404040;
+		border-color: #282828;*/
+		filter: grayscale(95%);
+	}
+	.body--dark .card-experience__head::after {
+		/*border-right-color: #404040;
+		border-left-color: #404040;
+		color:#f1f1f1;*/
+		filter: grayscale(95%);
+	}
+	.body--dark .card-experience__body {
+		background-color: #5E5E5E;
+	}
+}
