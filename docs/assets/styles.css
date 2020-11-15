@@ -565,14 +565,14 @@ p.text-description {
 	/*background-color: #404040;
 	border-color: #282828;*/
 	border-color: #282828;
-	filter: grayscale(60%);
+	/*filter: grayscale(60%);*/
 }
 .body--dark .card-experience__head::after {
 	/*border-right-color: #404040;
-	border-left-color: #404040;
-	color:#f1f1f1;*/
+	border-left-color: #404040;*/
+	color:#f1f1f1;
 
-	filter: grayscale(60%);
+	/*filter: grayscale(60%);*/
 }
 .body--dark .card-experience__body {
 	/*background-color: #5E5E5E;*/
@@ -614,15 +614,15 @@ p.text-description {
 	}
 	.body--dark .card-experience__head,
 	.body--dark .card-experience__head:before {
-		/*background-color: #404040;
-		border-color: #282828;*/
-		filter: grayscale(95%);
+		background-color: #404040;
+		border-color: #282828;
+		/*filter: grayscale(95%);*/
 	}
 	.body--dark .card-experience__head::after {
-		/*border-right-color: #404040;
+		border-right-color: #404040;
 		border-left-color: #404040;
-		color:#f1f1f1;*/
-		filter: grayscale(95%);
+		color:#f1f1f1;
+		/*filter: grayscale(95%);*/
 	}
 	.body--dark .card-experience__body {
 		background-color: #5E5E5E;
