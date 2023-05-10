@@ -15,7 +15,7 @@ This is my resume. I made it just for fun and now is my official resume. Here I 
 
 ## Resources
 
-I used icons from [devicon](https://konpa.github.io/devicon/)
+I used icons from [devicon](https://devicon.dev/)
 
 ## License
 
