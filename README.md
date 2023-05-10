@@ -5,8 +5,8 @@ This is my resume. I made it just for fun and now is my official resume. Here I 
 ## Sections
 
 - About me
-- Superpowers
-- Experience
+- Technical Skills
+- Work Experience
 - Courses
 
 ## View resume - GitHub Pages
