@@ -313,6 +313,9 @@ p.text-description {
 	padding: 1rem 1rem 1rem 2rem;
 	width: 50%;
 }
+.card-experience--width-80{
+	width: 80%;
+}
 @media (max-width: 1140px) {
 	.card-experience {
 		padding: 1rem 1rem 1rem 2rem;
