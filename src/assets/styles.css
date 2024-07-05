@@ -631,3 +631,7 @@ p.text-description {
 		background-color: #5E5E5E;
 	}
 }
+.card-experience__body p {
+	font-size: 1rem;
+	font-weight: bold;
+}
