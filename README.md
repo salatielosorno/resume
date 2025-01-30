@@ -7,7 +7,6 @@ This is my resume. I made it just for fun and now is my official resume. Here I 
 - About me
 - Technical Skills
 - Work Experience
-- Courses
 
 ## View resume - GitHub Pages
 
@@ -16,6 +15,10 @@ This is my resume. I made it just for fun and now is my official resume. Here I 
 ## Resources
 
 I used icons from [devicon](https://devicon.dev/)
+
+## Requirements
+
+- Node 20 or superior.
 
 ## License
 
